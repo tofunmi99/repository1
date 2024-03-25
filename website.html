@@ -5,267 +5,367 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Website</title>
     <link rel="stylesheet" href="website.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <script src="https://kit.fontawesome.com/955fe9e8fd.js"></script>
   </head>
   <body>
-    <nav>
-      <span style="font-size: 70px">
-        <i class="fa-solid fa-lock"></i>
-      </span>
-      <ul>
-        <li>
-          <a href="">Home</a>
-        </li>
-        <li>
-          <a href="">About</a>
-        </li>
-        <li>
-          <a href="">Contact Us</a>
-        </li>
-        <li>
-          <a href="">Services</a>
-        </li>
-        <li>
-          <a href="">Gallery</a>
-        </li>
-      </ul>
+    <!-- nav bar bootstrap -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#"> <i class="fa-solid fa-lock"></i></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <section class="heropage">
-      <h2 class="first_heading">
-        Wordpress Websites Work Better With Wordpress <br />
-        Hosting
-      </h2>
-      <p class="desc">25% Off For New Users! Get Started</p>
-      <form action="">
-        <label class="firstlabel">
-          <input
-            class="firstinput"
-            type="text"
-            ;
-            placeholder="Search for a domain name (e.g. yourdomain.com)"
-          />
-          <i class="fa-solid fa-magnifying-glass" style="color: aliceblue"></i>
-        </label>
-      </form>
-    </section>
-    <section class="design_component">
-      <div class="service">
-        <div class="service1">
-          <h3 style="padding-bottom: 7px">cPanel Hosting</h3>
-          <br />
-          <p class="red">From N1,000.00/mo</p>
-          <br />
-          <p style="line-height: 27px">
-            Get secure and reliable hosting accounts
-          </p>
-          <button>Get Started</button>
-        </div>
-        <div class="service1">
-          <h3 style="padding-bottom: 7px">WordPress Hosting</h3>
-          <br />
-          <p class="red">From N4,000.00/mo</p>
-          <br />
-          <p style="line-height: 27px">
-            Powered by AWS and perfect for WordPress websites
-          </p>
-          <button>Get Started</button>
-        </div>
-        <div class="service1">
-          <h3 style="padding-bottom: 7px">Email Hosting</h3>
-          <br />
-          <p class="red">From N1,000.00/mo</p>
-          <br />
-          <p style="line-height: 27px">
-            Get professional emails for your business
-          </p>
-          <button>Get Started</button>
-        </div>
-        <div class="service1">
-          <h3 style="padding-bottom: 7px">Muzu</h3>
-          <br />
-          <p class="red">From N3,500.00/mo</p>
-          <br />
-          <p style="line-height: 27px">
-            Dont know how to code? Build a website in 10 minutes
-          </p>
-          <button>Get Started</button>
-        </div>
-      </div>
 
-      <h3 class="bluetext">
-        We Provide Online Solutions For Businesses And Individuals
-      </h3>
+    <!-- old navbar -->
+    <div class="fixbuttons">
+      <nav>
+        <span style="font-size: 70px">
+          <i class="fa-solid fa-lock"></i>
+        </span>
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Contact Us</a>
+          </li>
+          <li>
+            <a href="">Services</a>
+          </li>
+          <li>
+            <a href="">Gallery</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="heropage">
+        <h2 class="first_heading">
+          Wordpress Websites Work Better With Wordpress <br />
+          Hosting
+        </h2>
+        <p class="desc">25% Off For New Users! Get Started</p>
+        <form action="">
+          <label class="firstlabel">
+            <input
+              class="firstinput"
+              type="text"
+              ;
+              placeholder="Search for a domain name (e.g. yourdomain.com)"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass"
+              style="color: aliceblue"
+            ></i>
+          </label>
+        </form>
+      </section>
+      <section class="design_component">
+        <div class="service">
+          <div class="service1">
+            <h3 style="padding-bottom: 7px">cPanel Hosting</h3>
+            <br />
+            <p class="red">From N1,000.00/mo</p>
+            <br />
+            <p style="line-height: 27px">
+              Get secure and reliable hosting accounts
+            </p>
+            <button>Get Started</button>
+          </div>
+          <div class="service1">
+            <h3 style="padding-bottom: 7px">WordPress Hosting</h3>
+            <br />
+            <p class="red">From N4,000.00/mo</p>
+            <br />
+            <p style="line-height: 27px">
+              Powered by AWS and perfect for WordPress websites
+            </p>
+            <button>Get Started</button>
+          </div>
+          <div class="service1">
+            <h3 style="padding-bottom: 7px">Email Hosting</h3>
+            <br />
+            <p class="red">From N1,000.00/mo</p>
+            <br />
+            <p style="line-height: 27px">
+              Get professional emails for your business
+            </p>
+            <button>Get Started</button>
+          </div>
+          <div class="service1">
+            <h3 style="padding-bottom: 7px">Muzu</h3>
+            <br />
+            <p class="red">From N3,500.00/mo</p>
+            <br />
+            <p style="line-height: 27px">
+              Dont know how to code? Build a website in 10 minutes
+            </p>
+            <button>Get Started</button>
+          </div>
+        </div>
 
-      <section class="img">
-        <img src="Cool-FM-Logo.svg" alt="" />
-        <img src="nuc-logo.png" alt="" />
-        <img src="slot-logo.svg" alt="" />
-        <img src="GTBank-Logo.svg" alt="" />
-        <img src="seamfix.png" alt="" />
-        <img src="dragnet.png" alt="" />
+        <h3 class="bluetext">
+          We Provide Online Solutions For Businesses And Individuals
+        </h3>
+
+        <section class="img">
+          <img src="assets/Cool-FM-Logo (1).svg" alt="" />
+          <img src="assets/nuc-logo (1).png" alt="" />
+          <img src="assets/slot-logo.svg" alt="" />
+          <img src="assets/GTBank-Logo.svg" alt="" />
+          <img src="assets/seamfix (1).png" alt="" />
+          <img src="assets/dragnet.png" alt="" />
+        </section>
       </section>
-    </section>
-    <section class="whychoose">
-      <h1>Why Choose WhoGoHost?</h1>
-      <p class="over">
-        Over the years, 40,000+ companies and institutions have <br />trusted us
-        to deliver excellent services
-      </p>
-      <section class="columns">
-        <div class="clmn">
-          <img src="no.1.png" alt="" />
-          <p class="bolder">West Africa's No. 1 Hosting Provider</p>
-          <p>
-            We are West Africa's largest and most popular web hosting provider,
-            supporting businesses, enterprises and individuals for the past 12
-            years and counting.
-          </p>
-        </div>
-        <div class="clmn">
-          <img src="wide-range-of-offerings.svg" alt="" />
-          <p class="bolder">Wide Range Of Offerings</p>
-          <p>
-            With our growing number of offerings, we are your one-stop shop for
-            anything you and your business needs to succeed online.
-          </p>
-        </div>
-        <div class="clmn">
-          <img src="no.1.png" alt="" />
-          <p class="bolder">24/7 Customer Support</p>
-          <p>
-            Our 24/7 award-winning support team is available to handle any
-            requests you may have. Whatever you may need, we are just a click
-            away.
-          </p>
-        </div>
-      </section>
-    </section>
-    <section class="customerslove">
-      <div class="half1">
-        <img src="no.1.png" alt="" />
-        <h4>Our Customers Love Us!</h4>
-        <p>
-          We love to help our customers succeed. To make that happen, we put our
-          best to provide our customers with just what they need... and more. No
-          wonder they love doing business with us.
+      <section class="whychoose">
+        <h1>Why Choose WhoGoHost?</h1>
+        <p class="over">
+          Over the years, 40,000+ companies and institutions have <br />trusted
+          us to deliver excellent services
         </p>
-        <button>Read what our clients have to say</button>
-      </div>
-      <div class="half2">
-        <img src="client-mage-group.png" alt="" />
-      </div>
-    </section>
-    <footer>
-      <div class="firstpart">
-        <img src="logo-blue-white.png" alt="" class="logo" />
-
-        <div class="msghold">
-          <div class="twolines">
-            <h3 style="padding-bottom: 20px">Subscribe to Our newsletter</h3>
-            <p style="padding-right: 10px">
-              Get the latest information, updates and more
+        <section class="columns">
+          <div class="clmn">
+            <img src="assets/no.1.png" alt="" />
+            <p class="bolder">West Africa's No. 1 Hosting Provider</p>
+            <p>
+              We are West Africa's largest and most popular web hosting
+              provider, supporting businesses, enterprises and individuals for
+              the past 12 years and counting.
             </p>
           </div>
+          <div class="clmn">
+            <img src="assets/wide-range-of-offerings (1).svg" alt="" />
+            <p class="bolder">Wide Range Of Offerings</p>
+            <p>
+              With our growing number of offerings, we are your one-stop shop
+              for anything you and your business needs to succeed online.
+            </p>
+          </div>
+          <div class="clmn">
+            <img src="assets/no.1.png" alt="" />
+            <p class="bolder">24/7 Customer Support</p>
+            <p>
+              Our 24/7 award-winning support team is available to handle any
+              requests you may have. Whatever you may need, we are just a click
+              away.
+            </p>
+          </div>
+        </section>
+      </section>
+      <section class="customerslove">
+        <div class="half1">
+          <img src="assets/no.1.png" alt="" />
+          <h4>Our Customers Love Us!</h4>
+          <p>
+            We love to help our customers succeed. To make that happen, we put
+            our best to provide our customers with just what they need... and
+            more. No wonder they love doing business with us.
+          </p>
+          <button>Read what our clients have to say</button>
+        </div>
+        <div class="half2">
+          <img src="assets/client-mage-group.png" alt="" />
+        </div>
+      </section>
+      <section class="lastsection">
+        <div class="lastsectionhalf1">
+          <h3>Different businesses, same top class support</h3>
+          <p>
+            Our experts are on hand to help every step of the way. They offer
+            <br />
+            assistance, help with website migrations and ongoing tech support by
+            <br />
+            live chat and ticket.
+          </p>
+          <div class="buttons">
+            <button style="width: 145px">Chat with us now</button>
+            <button style="width: 175px">Open a support ticket</button>
+          </div>
+        </div>
+        <div class="lastsectionhalf2">
+          <img
+            src="assets/no.1.png"
+            alt=""
+            style="padding-left: 110px; margin-top: 70px"
+          />
+        </div>
+      </section>
+      <footer>
+        <div class="firstpart">
+          <img src="assets/logo-blue-white.png" alt="" class="logo" />
 
-          <form action="">
-            <input type="text" placeholder="none" class="message" />
-          </form>
-          <button class="subscribe">subscribe</button>
-        </div>
-      </div>
-      <div class="secondpart">
-        <div class="footercolumns">
-          <p>Hosting</p>
-          <ul>
-            <li>Web Hosting</li>
-            <li>Reseller Hosting</li>
-            <li>local servers in Nigeria</li>
-            <li>hosting transfer</li>
-            <li>cloud hosting</li>
-            <li>google workspace</li>
-            <li>microsoft 365</li>
-          </ul>
-        </div>
+          <div class="msghold">
+            <div class="twolines">
+              <h3 style="padding-bottom: 20px">Subscribe to Our newsletter</h3>
+              <p style="padding-right: 10px">
+                Get the latest information, updates and more
+              </p>
+            </div>
 
-        <div class="footercolumns">
-          <p>domains</p>
-          <ul>
-            <li>domain</li>
-            <li>registration</li>
-            <li>domain transfer</li>
-            <li>domain resseller</li>
-          </ul>
+            <form action="">
+              <input type="text" placeholder="none" class="message" />
+            </form>
+            <button class="subscribe">subscribe</button>
+          </div>
         </div>
+        <div class="secondpart">
+          <div class="footercolumns">
+            <p>Hosting</p>
+            <ul>
+              <li>Web Hosting</li>
+              <li>Reseller Hosting</li>
+              <li>local servers in Nigeria</li>
+              <li>hosting transfer</li>
+              <li>cloud hosting</li>
+              <li>google workspace</li>
+              <li>microsoft 365</li>
+            </ul>
+          </div>
 
-        <div class="footercolumns">
-          <p>services</p>
-          <ul>
-            <li>SSL certificate</li>
-            <li>site builder</li>
-            <li>web design</li>
-            <li>website production</li>
-            <li>website backup</li>
-            <li>domain Reseller</li>
-            <li>API</li>
-            <li>whogoghost</li>
-            <li>enterprise</li>
-          </ul>
-        </div>
+          <div class="footercolumns">
+            <p>domains</p>
+            <ul>
+              <li>domain</li>
+              <li>registration</li>
+              <li>domain transfer</li>
+              <li>domain resseller</li>
+            </ul>
+          </div>
 
-        <div class="footercolumns">
-          <p>company</p>
-          <ul>
-            <li>about us</li>
-            <li>contact us</li>
-            <li>announcements</li>
-            <li>affiliate system</li>
-            <li>terms of service</li>
-            <li>our blog</li>
-            <li>merger and acquisition</li>
-          </ul>
-        </div>
+          <div class="footercolumns">
+            <p>services</p>
+            <ul>
+              <li>SSL certificate</li>
+              <li>site builder</li>
+              <li>web design</li>
+              <li>website production</li>
+              <li>website backup</li>
+              <li>domain Reseller</li>
+              <li>API</li>
+              <li>whogoghost</li>
+              <li>enterprise</li>
+            </ul>
+          </div>
 
-        <div class="footercolumns">
-          <p>support</p>
-          <ul>
-            <li>client login</li>
-            <li>knowlege bass</li>
-            <li>downloads</li>
-          </ul>
-        </div>
+          <div class="footercolumns">
+            <p>company</p>
+            <ul>
+              <li>about us</li>
+              <li>contact us</li>
+              <li>announcements</li>
+              <li>affiliate system</li>
+              <li>terms of service</li>
+              <li>our blog</li>
+              <li>merger and acquisition</li>
+            </ul>
+          </div>
 
-        <div class="footercolumns">
-          <p>STAY CONNECTED</p>
-          <i class="fa-brands fa-square-instagram"></i>
-          <i class="fa-brands fa-square-instagram"></i>
-          <i class="fa-brands fa-square-instagram"></i>
-          <i class="fa-brands fa-square-instagram"></i>
-          <i class="fa-brands fa-square-instagram"></i>
+          <div class="footercolumns">
+            <p>support</p>
+            <ul>
+              <li>client login</li>
+              <li>knowlege bass</li>
+              <li>downloads</li>
+            </ul>
+          </div>
+
+          <div class="footercolumns">
+            <p>STAY CONNECTED</p>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+          </div>
         </div>
-      </div>
-      <hr style="background-color: white; width: 200%; margin-left: -50%" />
-      <br /><br />
-      <div
-        style="
-          display: flex;
-          font-family: Arial, Helvetica, sans-serif;
-          justify-content: space-between;
-        "
-      >
-        <div>
-          <i class="fa-regular fa-copyright"></i
-          ><span>
-            2024 Whogohost Limited African #1 Domain and Hosting Provider.</span
-          >
-        </div>
+        <hr style="background-color: white; width: 200%; margin-left: -50%" />
+        <br /><br />
         <div
-          style="display: flex; justify-content: space-between; width: 350px"
+          style="
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: space-between;
+          "
         >
-          <p>Terms of Service</p>
-          <p>Privacy Policy</p>
-          <p>Refund Policy</p>
+          <div>
+            <i class="fa-regular fa-copyright"></i
+            ><span>
+              2024 Whogohost Limited African #1 Domain and Hosting
+              Provider.</span
+            >
+          </div>
+          <div
+            style="display: flex; justify-content: space-between; width: 350px"
+          >
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+            <p>Refund Policy</p>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
